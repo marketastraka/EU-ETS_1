@@ -1,0 +1,7 @@
+﻿varianta,pokles_celkem_Mt,zavrena_Mt,nova_Mt,pokracujici_Mt,nejasne_Mt,mimo_rozsah_Mt,podil_zavrena_%,podil_nejasne_%,podil_pokracujici_%,podil_nova_%
+HLAVNÍ: zavřeno = všechna zastavená (emise na 0/chybí),27.68,-2.45,0.09,-25.32,0.0,-0.0,8.86,-0.0,91.46,-0.34
+jen příděl: práh 10 %,27.68,-2.27,0.09,-25.32,-0.18,-0.0,8.22,0.65,91.46,-0.34
+jen příděl: práh 15 %,27.68,-2.27,0.09,-25.32,-0.18,-0.0,8.2,0.66,91.46,-0.34
+jen příděl: práh 25 %,27.68,-2.27,0.09,-25.32,-0.19,-0.0,8.19,0.67,91.46,-0.34
+zavřeno = poslední rok s emisemi > 0 v datech,27.68,-2.45,0.09,-25.32,-0.0,-0.0,8.86,0.01,91.46,-0.34
+zavřeno = poslední rok s emisemi > 0 a ACCOUNT_CLOSURE != OPEN,27.68,-2.33,0.09,-25.32,-0.12,-0.0,8.42,0.44,91.46,-0.34

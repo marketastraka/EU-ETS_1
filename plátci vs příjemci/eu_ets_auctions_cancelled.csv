@@ -1,0 +1,4 @@
+﻿date,source_year,auction_name_raw,auction_type,contract,certificate,status,auction_volume_tco2,source_file,source_row
+2020-03-17,2020,Auction 3. Period CAP2-EU,EU,T3PA,EUA,cancelled,2717500.0,emission-spot-primary-market-auction-report-2020-data.xlsx,177
+2022-03-02,2022,Auction 4. Period CAP3 PL,PL,T3PA,EUA,cancelled,2658000.0,emission-spot-primary-market-auction-report-2022-data.xlsx,193
+2022-02-01,2022,Auction 4. Period CAP3 EU,EU,T3PA,EUA,cancelled,2449000.0,emission-spot-primary-market-auction-report-2022-data.xlsx,214

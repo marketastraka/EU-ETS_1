@@ -1,0 +1,147 @@
+2026-11-16 16:06:54,561 INFO DATA_PATH=/mnt/user-data/uploads/emission-spot-primary-market-auction-report-2012-2025-data/emission-spot-primary-market-auction-report-2012-2025-data/
+2026-11-16 16:06:54,561 INFO OUT_PATH=/mnt/user-data/outputs/out
+2026-11-16 16:06:54,564 INFO Nalezeno souborů: 14 z 14; chybí: []
+2026-11-16 16:06:54,593 INFO 2012: old formát, hlavička v řádku 2, 75 aukcí, 73 dnů
+2026-11-16 16:06:54,627 INFO 2013: old formát, hlavička v řádku 2, 211 aukcí, 191 dnů
+2026-11-16 16:06:54,660 INFO 2014: old formát, hlavička v řádku 2, 198 aukcí, 198 dnů
+2026-11-16 16:06:54,694 INFO 2015: old formát, hlavička v řádku 2, 207 aukcí, 205 dnů
+2026-11-16 16:06:54,727 INFO 2016: old formát, hlavička v řádku 2, 195 aukcí, 195 dnů
+2026-11-16 16:06:54,794 INFO 2017: new formát, hlavička v řádku 5, 206 aukcí, 201 dnů
+2026-11-16 16:06:54,854 INFO 2018: new formát, hlavička v řádku 5, 209 aukcí, 203 dnů
+2026-11-16 16:06:54,870 INFO 2019: sloupec 'Innovation\\nFund' bez kódu v závorce mapován na IF
+2026-11-16 16:06:54,924 INFO 2019: new formát, hlavička v řádku 5, 216 aukcí, 208 dnů
+2026-11-16 16:06:55,136 INFO 2020: new formát, hlavička v řádku 5, 218 aukcí, 210 dnů
+2026-11-16 16:06:55,269 INFO 2021: new formát, hlavička v řádku 5, 230 aukcí, 223 dnů
+2026-11-16 16:06:55,403 INFO 2022: new formát, hlavička v řádku 5, 222 aukcí, 222 dnů
+2026-11-16 16:06:55,536 INFO 2023: new formát, hlavička v řádku 5, 223 aukcí, 223 dnů
+2026-11-16 16:06:55,683 INFO 2024: new formát, hlavička v řádku 5, 221 aukcí, 221 dnů
+2026-11-16 16:06:55,828 INFO 2025: new formát, hlavička v řádku 5, 213 aukcí, 213 dnů
+2026-11-16 16:06:55,846 INFO Dopočet objemu revenue/price: 50615 řádků, max odchylka od celého čísla = 9.31e-10
+2026-11-16 16:06:55,916 INFO Total Revenue doplněno ze cena*objem u 27 aukcí (2012 národní aukce)
+2026-11-16 16:06:55,917 INFO Klíč Date x Auction type x Certificate: duplicity=0 (viz rozhodnutí v README)
+2026-11-16 16:06:55,921 INFO Kódy (38): ['AT', 'BE', 'BG', 'CY', 'CZ', 'DE', 'DK', 'EE', 'EL', 'ES', 'FI', 'FR', 'HR', 'HU', 'IE', 'IF', 'IS', 'IT', 'IX', 'LI', 'LT', 'LU', 'LV', 'MF', 'MT', 'MX', 'NL', 'NO', 'PL', 'PT', 'RO', 'SE', 'SF', 'SI', 'SK', 'XA', 'XF', 'XI']; nenamapované názvy: ['XA']
+2026-11-16 16:07:01,118 INFO 
+VALIDAČNÍ REPORT build_wide.py
+================================================================================
+1) Soubory: nalezeno 14/14 (2012.xls, 2013.xls, 2014.xls, 2015.xls, 2016.xls, 2017.xls, 2018.xls, 2019.xls, 2020.xlsx, 2021.xlsx, 2022.xlsx, 2023.xlsx, 2024.xlsx, 2025.xlsx)
+
+2) INTERPRETACE HODNOT PO STÁTECH (společné aukce 2012-2025 a nové formáty; n=2545 aukcí)
+   max |součet_po_státech - Total Revenue| / Total Revenue = 0.000e+00
+   součet_po_státech / Auction Volume: min 2.65, max 97.51 (tj. NEjsou to tCO2, ale EUR)
+   => hodnoty po státech = VÝNOS z aukce v EUR přiřazený státu; objem = výnos / aukční cena.
+   max odchylka dopočteného objemu od celého čísla: 9.31e-10
+
+3) SOUČET OBJEMŮ PŘES STÁTY vs Auction Volume (úspěšné aukce, n=2841)
+   max |odchylka| = 0.000e+00 %, počet aukcí s |odchylkou| > 0.001 %: 0
+   10 největších odchylek:
+      date auction_type certificate contract  auction_volume_tco2  volume_tco2_sum_states  volume_diff_pct  abs_diff_tco2
+2012-01-03           DE         EUA     T2PA             300000.0                300000.0              0.0            0.0
+2012-01-10           DE         EUA     T2PA             300000.0                300000.0              0.0            0.0
+2012-01-17           DE         EUA     T2PA             300000.0                300000.0              0.0            0.0
+2012-01-24           DE         EUA     T2PA             300000.0                300000.0              0.0            0.0
+2012-01-26           LT         EUA     T2PA             850000.0                850000.0              0.0            0.0
+2012-01-31           DE         EUA     T2PA             300000.0                300000.0              0.0            0.0
+2012-02-07           DE         EUA     T2PA             300000.0                300000.0              0.0            0.0
+2012-02-14           DE         EUA     T2PA             300000.0                300000.0              0.0            0.0
+2012-02-21           DE         EUA     T2PA             300000.0                300000.0              0.0            0.0
+2012-02-23           NL         EUA     T2PA            1000000.0               1000000.0              0.0            0.0
+
+4) POČTY ŘÁDKŮ PO LETECH (zdroj vs wide)
+ year  source_rows  cancelled  wide_rows  unique_days_wide  unique_days_source  rows_reconcile
+ 2012           75          0         75                73                  73            True
+ 2013          211          0        211               191                 191            True
+ 2014          198          0        198               198                 198            True
+ 2015          207          0        207               205                 205            True
+ 2016          195          0        195               195                 195            True
+ 2017          206          0        206               201                 201            True
+ 2018          209          0        209               203                 203            True
+ 2019          216          0        216               208                 208            True
+ 2020          218          1        217               209                 210            True
+ 2021          230          0        230               223                 223            True
+ 2022          222          2        220               220                 222            True
+ 2023          223          0        223               223                 223            True
+ 2024          221          0        221               221                 221            True
+ 2025          213          0        213               213                 213            True
+   všech 14 roků přítomno: True; všechny sedí (zdroj - zrušené = wide): True
+   denní soubor: 2783 dní; wide: 2841 řádků; součet objemů daily vs wide: True
+   součet objemů po státech daily vs wide: True
+
+5) KÓDY STÁTŮ (38): AT, BE, BG, CY, CZ, DE, DK, EE, EL, ES, FI, FR, HR, HU, IE, IF, IS, IT, IX, LI, LT, LU, LV, MF, MT, MX, NL, NO, PL, PT, RO, SE, SF, SI, SK, XA, XF, XI
+   bez názvu v mapě: ['XA']
+   kódy mimo EU-27/EEA, které je třeba vysvětlit: XA (není v Caption), XF (Flandry, Caption), IF/MF/MX/IX/SF/XI = fondy / Severní Irsko
+
+6) HISTORIE STÁTŮ (první a poslední nenulový den)
+code                name first_nonzero last_nonzero  n_auctions  total_volume_tco2
+  AT             Austria    2012-11-13   2025-12-15        1887        112382000.0
+  BE             Belgium    2013-01-07   2025-12-15        1876        203482000.0
+  BG            Bulgaria    2012-11-13   2025-12-15        1887        204136500.0
+  CY              Cyprus    2012-11-27   2025-12-15        1361         13303000.0
+  CZ      Czech Republic    2012-10-11   2025-12-15        1849        242756500.0
+  DE             Germany    2012-01-03   2025-12-12         659       1702569500.0
+  DK             Denmark    2012-12-18   2025-12-15        1877        102661000.0
+  EE             Estonia    2013-01-07   2025-12-15        1876         60847500.0
+  EL              Greece    2012-12-04   2025-12-15        1881        307438500.0
+  ES               Spain    2012-11-13   2025-12-15        1887        756974500.0
+  FI             Finland    2012-11-13   2025-12-15        1887        137899000.0
+  FR              France    2012-11-13   2025-12-15        1887        467365000.0
+  HR             Croatia    2015-01-08   2025-12-15        1586         39753500.0
+  HU             Hungary    2012-12-10   2025-12-15        1883        128717000.0
+  IE             Ireland    2013-02-18   2025-12-15        1775         70246500.0
+  IF     Innovation Fund    2020-07-16   2025-12-15         692        221709000.0
+  IS             Iceland    2019-06-03   2025-12-15         544          3116500.0
+  IT               Italy    2012-11-13   2025-12-15        1887        812694500.0
+  IX        InnoFund RRF    2023-07-03   2025-12-15         356        123148000.0
+  LI       Liechtenstein    2019-06-03   2025-12-15         126            72500.0
+  LT           Lithuania    2012-01-26   2025-12-15        1886         42510500.0
+  LU          Luxembourg    2012-11-27   2024-11-13        1373          8320500.0
+  LV              Latvia    2012-11-13   2025-12-15        1887         22683000.0
+  MF  Modernisation Fund    2021-02-01   2025-12-15         701        390046000.0
+  MT               Malta    2012-12-11   2025-12-15        1879          9727000.0
+  MX              MS RRF    2023-07-03   2025-12-15         356         85547000.0
+  NL         Netherlands    2012-02-23   2025-12-15        1889        287724500.0
+  NO              Norway    2019-06-03   2025-12-15         952         65222500.0
+  PL              Poland    2013-09-16   2025-12-10         272        851375500.0
+  PT            Portugal    2012-11-27   2025-12-15        1883        155174000.0
+  RO             Romania    2012-11-13   2025-12-15        1887        306888500.0
+  SE              Sweden    2012-11-13   2025-12-15        1887         75238000.0
+  SF Social Climate Fund    2025-01-07   2025-12-15         142         50000000.0
+  SI            Slovenia    2012-11-13   2025-12-15        1886         38836000.0
+  SK            Slovakia    2012-11-13   2025-12-15        1887        121298500.0
+  XA                   ?    2013-04-24   2013-04-24           1           865000.0
+  XF  Flanders (Caption)    2013-02-26   2013-03-19           4          9565000.0
+  XI    Northern Ireland    2022-02-23   2025-10-08           5          4760500.0
+   Chorvatsko první nenulový: 2015-01-08
+   VB/UK/GB: kód NEnalezen (EEX report neobsahuje VB; neodhaduje se) v datech
+
+7) NAMÁTKOVÁ KONTROLA proti zdroji (5 řádků na období, seed=0)
+                            period       date auction_type contract                                                source_file  source_row  n_state_cells_checked  match
+2012-2015 (old, Details s tečkami) 2012-03-20           DE     T2PA  emission-spot-primary-market-auction-report-2012-data.xls          64                      1   True
+2012-2015 (old, Details s tečkami) 2015-06-29           EU     T3PA  emission-spot-primary-market-auction-report-2015-data.xls         108                     25   True
+2012-2015 (old, Details s tečkami) 2013-04-25           EU     T3PA  emission-spot-primary-market-auction-report-2013-data.xls         149                     24   True
+2012-2015 (old, Details s tečkami) 2015-01-20           EU     T3PA  emission-spot-primary-market-auction-report-2015-data.xls         202                     25   True
+2012-2015 (old, Details s tečkami) 2014-04-28           EU     T3PA  emission-spot-primary-market-auction-report-2014-data.xls         137                     24   True
+                 2016 (old, plain) 2016-05-31           EU     T3PA  emission-spot-primary-market-auction-report-2016-data.xls         115                     25   True
+                 2016 (old, plain) 2016-01-29           DE     T3PA  emission-spot-primary-market-auction-report-2016-data.xls         186                      1   True
+                 2016 (old, plain) 2016-03-02           PL     T3PA  emission-spot-primary-market-auction-report-2016-data.xls         165                      1   True
+                 2016 (old, plain) 2016-07-19           EU     T3PA  emission-spot-primary-market-auction-report-2016-data.xls          85                     25   True
+                 2016 (old, plain) 2016-11-08           EU     T3PA  emission-spot-primary-market-auction-report-2016-data.xls          27                     24   True
+                   2017-2019 (new) 2018-11-05           EU     T3PA  emission-spot-primary-market-auction-report-2018-data.xls          30                     25   True
+                   2017-2019 (new) 2019-02-15           DE     T3PA  emission-spot-primary-market-auction-report-2019-data.xls         198                      1   True
+                   2017-2019 (new) 2018-07-02           EU     T3PA  emission-spot-primary-market-auction-report-2018-data.xls         110                     25   True
+                   2017-2019 (new) 2018-03-15           EU     T3PA  emission-spot-primary-market-auction-report-2018-data.xls         172                     25   True
+                   2017-2019 (new) 2019-04-24           PL     T3PA  emission-spot-primary-market-auction-report-2019-data.xls         156                      1   True
+           2020-2025 (new, Status) 2025-10-30           EU     T3PA emission-spot-primary-market-auction-report-2025-data.xlsx          36                     33   True
+           2020-2025 (new, Status) 2021-10-26           EU     T3PA emission-spot-primary-market-auction-report-2021-data.xlsx          47                     30   True
+           2020-2025 (new, Status) 2024-10-07           EU     T3PA emission-spot-primary-market-auction-report-2024-data.xlsx          55                     32   True
+           2020-2025 (new, Status) 2020-11-20           DE     T3PA emission-spot-primary-market-auction-report-2020-data.xlsx          21                      1   True
+           2020-2025 (new, Status) 2025-05-16           DE     T3PA emission-spot-primary-market-auction-report-2025-data.xlsx         139                      1   True
+   shoda: 20/20
+
+8) ZRUŠENÉ AUKCE (vyřazeny z wide/long; objem nebyl přidělen)
+      date auction_type contract    status  auction_volume_tco2
+2020-03-17           EU     T3PA cancelled            2717500.0
+2022-03-02           PL     T3PA cancelled            2658000.0
+2022-02-01           EU     T3PA cancelled            2449000.0
+
+9) Duplicity klíče date x auction_type x certificate: 0 řádků
+2026-11-16 16:07:01,119 INFO HOTOVO: wide (2841, 51), daily (2783, 49), long (50911, 16); výstup: /mnt/user-data/outputs/out

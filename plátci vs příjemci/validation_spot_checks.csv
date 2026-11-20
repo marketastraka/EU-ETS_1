@@ -1,0 +1,21 @@
+﻿period,date,auction_type,contract,source_file,source_row,n_state_cells_checked,match
+"2012-2015 (old, Details s tečkami)",2012-03-20,DE,T2PA,emission-spot-primary-market-auction-report-2012-data.xls,64,1,True
+"2012-2015 (old, Details s tečkami)",2015-06-29,EU,T3PA,emission-spot-primary-market-auction-report-2015-data.xls,108,25,True
+"2012-2015 (old, Details s tečkami)",2013-04-25,EU,T3PA,emission-spot-primary-market-auction-report-2013-data.xls,149,24,True
+"2012-2015 (old, Details s tečkami)",2015-01-20,EU,T3PA,emission-spot-primary-market-auction-report-2015-data.xls,202,25,True
+"2012-2015 (old, Details s tečkami)",2014-04-28,EU,T3PA,emission-spot-primary-market-auction-report-2014-data.xls,137,24,True
+"2016 (old, plain)",2016-05-31,EU,T3PA,emission-spot-primary-market-auction-report-2016-data.xls,115,25,True
+"2016 (old, plain)",2016-01-29,DE,T3PA,emission-spot-primary-market-auction-report-2016-data.xls,186,1,True
+"2016 (old, plain)",2016-03-02,PL,T3PA,emission-spot-primary-market-auction-report-2016-data.xls,165,1,True
+"2016 (old, plain)",2016-07-19,EU,T3PA,emission-spot-primary-market-auction-report-2016-data.xls,85,25,True
+"2016 (old, plain)",2016-11-08,EU,T3PA,emission-spot-primary-market-auction-report-2016-data.xls,27,24,True
+2017-2019 (new),2018-11-05,EU,T3PA,emission-spot-primary-market-auction-report-2018-data.xls,30,25,True
+2017-2019 (new),2019-02-15,DE,T3PA,emission-spot-primary-market-auction-report-2019-data.xls,198,1,True
+2017-2019 (new),2018-07-02,EU,T3PA,emission-spot-primary-market-auction-report-2018-data.xls,110,25,True
+2017-2019 (new),2018-03-15,EU,T3PA,emission-spot-primary-market-auction-report-2018-data.xls,172,25,True
+2017-2019 (new),2019-04-24,PL,T3PA,emission-spot-primary-market-auction-report-2019-data.xls,156,1,True
+"2020-2025 (new, Status)",2025-10-30,EU,T3PA,emission-spot-primary-market-auction-report-2025-data.xlsx,36,33,True
+"2020-2025 (new, Status)",2021-10-26,EU,T3PA,emission-spot-primary-market-auction-report-2021-data.xlsx,47,30,True
+"2020-2025 (new, Status)",2024-10-07,EU,T3PA,emission-spot-primary-market-auction-report-2024-data.xlsx,55,32,True
+"2020-2025 (new, Status)",2020-11-20,DE,T3PA,emission-spot-primary-market-auction-report-2020-data.xlsx,21,1,True
+"2020-2025 (new, Status)",2025-05-16,DE,T3PA,emission-spot-primary-market-auction-report-2025-data.xlsx,139,1,True
